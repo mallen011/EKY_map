@@ -1,0 +1,167 @@
+html {
+
+}
+
+body {
+  padding: 5px;
+  font-family: 'Lora', serif;
+  margin: 0px;
+  background-color: #143887;
+}
+
+#header {
+  position: absolute;
+  margin-left: 450px;
+  margin-right: auto;
+  color: black;
+  font-size: 15px;
+  top:1px;
+  height:25px;
+  background-color: #143887;
+}
+
+#map {
+  margin-top: 60px;
+  margin-left: 0px;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+  text-shadow: 2px 2px 3px black;
+  margin-left: 10px;
+}
+
+h2{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 10px;
+  color: rgba(1, 1, 1, 1);
+  margin-left: 15px;
+}
+
+h3{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+/* Controls*/
+.leaflet-control-layers-toggle:after{
+    content:"layers";
+    color: green;
+    font-family: 'Spectral SC', serif;
+    background-image: url() !important;
+    width:250px;
+    background-color: #52527a;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: white;
+
+}
+
+.leaflet-control-layers-expanded {
+  color: black;
+  width:230px;
+  background-color: #52527a;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: white;
+ border-radius: 0px;
+}
+
+.leaflet-control-layers-toggle{
+    width:150px;
+    background-position:3px 50% ;
+    padding:10px;
+    padding-left:36px;
+    text-decoration: line-through;
+    line-height:36px;
+  /*  background-image: url() !important; */
+    background-color: #52527a;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: white;
+}
+
+input[type="checkbox"] {
+   opacity: 0;
+   left: 19px
+}
+input[type=checkbox] + label {
+  /*  background: url('./images/check1.png') no-repeat; */
+    padding-left: 23px;
+    padding-top: 1px
+}
+input[type=checkbox]:checked + label {
+/*    background: url('./images/check2.png') no-repeat; */
+    padding-left: 23px;
+    padding-top: 1px
+}
+
+#my-div-id {
+  iconSize: 36, 36;
+}
+
+/*Popups*/
+.leaflet-popup-content-wrapper, leaflet-popup-tip{
+   border-radius: 0px;
+   background-color: #52527a;
+   color: white;
+   font-family: 'Nanum Gothic', sans-serif;
+}
+
+.leaflet-popup-content {
+    margin: 13px 19px;
+    line-height: 1;
+}
+
+leaflet-popup-tip {
+  background-color: #52527a;
+}
+
+/*#legend {
+ font-family: 'Lacquer', sans-serif;
+ font-family: 'Pacifico', cursive;
+ margin-top: 75px;
+ margin-left: 15;
+ width: 300px;
+ height:550px;
+ background-color: #FCF500;
+}
+
+#farmlegend {
+    font-family: 'Lacquer', sans-serif;
+    font-family: 'Pacifico', cursive;
+    border: none;
+    color: grey;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FCF500;
+}
+
+#farmlegend:before {
+    content: url(http://127.0.0.1:8887/grocery-bag.png);
+    width: 30px;
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+#gslegend {
+     font-family: 'Lacquer', sans-serif;
+     font-family: 'Pacifico', cursive;
+     border: none;
+     color: grey;
+     padding: 12px 16px;
+     font-size: 16px;
+     cursor: pointer;
+     background-color: #FCF500;
+ }
+
+ #gslegend:before {
+  content: url(http://127.0.0.1:8887/shopping-cart.png);
+   width: 35px;
+   float: left;
+   margin-right: 5px;
+   margin-top: -2px;
+ }
